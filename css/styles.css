@@ -1,10 +1,9 @@
 body {
-  margin: 40px;
+  margin: 30px;
 }
-
 .container {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   grid-gap: 10px;
   background-color: #fff;
   color: #444;
@@ -16,4 +15,27 @@ body {
   border-radius: 5px;
   padding: 10px;
   font-size: 150%;
+}
+.a {
+    grid-column: 1 / 13;
+    grid-row: 1;
+    height: 200px;
+}
+.b {
+  grid-column: 1 / 7;
+}
+.c {
+  grid-column: 7 / 13;
+}
+.d {
+  grid-column: 1 / 5;
+}
+.e {
+  grid-column: 5 / 9;
+}
+.f {
+  grid-column: 1 / 9;
+}
+img {
+  width: 1000px;
 }
