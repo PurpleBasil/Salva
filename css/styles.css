@@ -10,10 +10,11 @@ h1 {
 }
 h2 {
   font-size: 18px;
+  margin: 10px;
 }
 .container {
   display: grid;
-  grid-template-columns: minmax(100px, 200px) repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas: 
     "logo title title"
     "slide slide slide"
@@ -21,11 +22,10 @@ h2 {
     "nav4 nav5 nav6"
     "brytekst bryfoto bryfoto";
   grid-gap: 10px;
-  padding: 10px;
 }
 
 .box { /* Dit wordt op elke cel afzonderlijk toegepast */
-  font-size: 120%;
+
 }
 .logo {
   grid-area: logo;
