@@ -4,15 +4,18 @@
 }
 body {
   margin: 0;
+  background-color: #F4FFE8; /* #E7FFCF kan ook geprobeerd */
+
 }
 h1 {
 	font-size: 22px;
 	color: #65A624;
 	margin: 0px;
 }
-h2 {
-  font-size: 18px;
-  margin: 10px;
+h5 {
+  font-size: 14px;
+  color: #68735D;
+  font-weight: lighter;
 }
 .container {
   display: grid;
@@ -43,11 +46,26 @@ h2 {
   grid-area: slide;
   height: 150px;
 }
+.nav {
+height: 40px;
+background-color: #DBF2C4;
+color:#68735D;
+font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
+/* de volgende 3 zorgen ervoor dat de tekst horizontaal en vertikaal gecentreerd wordt */
+display: flex; 
+justify-content: center;
+align-items: center;
+
+border-radius:5px;
+border:solid 1px #C4D9B0;
+box-shadow:1px 1px 2px #C4D9B0;
+transition:all 0.2s ease-in-out 0s;
+}
 @keyframes zweven {
   0% {
     padding-top: 10px;
   }
-  25% {
+  20% {
     padding-top: 15px;
   }
   100% {
@@ -55,7 +73,7 @@ h2 {
   }
 }
 .slider-img {
-  padding-top: 0px;
+  /* padding-top: 0px; */
   width: 100%;
   height: 100%;
   object-fit: cover;
