@@ -26,7 +26,7 @@ h5 {
     "nav1 nav2 nav3"
     "nav4 nav5 nav6"
     "brytekst bryfoto bryfoto";
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
 }
 
 .box { /* Dit wordt op elke cel afzonderlijk toegepast */
@@ -53,13 +53,14 @@ color:#68735D;
 font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
 /* de volgende 3 zorgen ervoor dat de tekst horizontaal en vertikaal gecentreerd wordt */
 display: flex; 
-justify-content: center;
-align-items: center;
-
+justify-content: center; /* vertikale uitlijning */
+align-items: center; /* horizontale uitlijning voor 1 woord */
+text-align: center; /* horizontale uitlijning voor meerdere woorden */
 border-radius:5px;
 border:solid 1px #C4D9B0;
-box-shadow:1px 1px 2px #C4D9B0;
+box-shadow:1px 1px 3px #333;
 transition:all 0.2s ease-in-out 0s;
+margin: 10px;
 }
 @keyframes zweven {
   0% {
