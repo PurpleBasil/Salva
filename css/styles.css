@@ -96,6 +96,7 @@ margin: 10px;
   animation-duration: 20s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  opacity: 0;
 }
 .slider-img2 {
   position: relative;
@@ -108,5 +109,6 @@ margin: 10px;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-delay: 10s;
+  opacity: 0;
 }
 
