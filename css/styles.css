@@ -25,8 +25,7 @@ h5 {
     "slide slide slide"
     "nav1 nav2 nav3"
     "nav4 nav5 nav6"
-    "brytekst bryfoto bryfoto";
-  /* grid-gap: 10px; */
+    "brytekst bryfoto bryfoto"; 
 }
 
 .box { /* Dit wordt op elke cel afzonderlijk toegepast */
@@ -94,20 +93,20 @@ margin: 10px;
   height: 100%;
   object-fit: cover;
   animation-name: zen;
-  animation-duration: 16s;
+  animation-duration: 20s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .slider-img2 {
   position: relative;
-  top: -150px;
+  top: -153px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   animation-name: zen;
-  animation-duration: 16s;
+  animation-duration: 20s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-delay: 8s;
+  animation-delay: 10s;
 }
 
