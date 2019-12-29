@@ -59,8 +59,12 @@ text-align: center; /* horizontale uitlijning voor meerdere woorden */
 border-radius: 5px;
 border: solid 1px #C4D9B0;
 box-shadow: 1px 1px 3px #333;
-transition: all 0.2s ease-in-out 0s;
+transition: all 0.2s ease-in-out 0s; /* wordt getriggered bij :hover */
 margin: 10px;
+}
+.nav:hover {
+  transform: scale(1.5,1.05);
+  /* overflow: hidden; */ /* zodat er geen horiz. scrollbalk komt bij :hover -> werkt nog niet*/
 }
 @keyframes zen {
   0% {
@@ -79,7 +83,6 @@ margin: 10px;
   75% {
     transform: scale(4,4);
     opacity: 0;
-
   }
   100% {
     transform: scale(4,4);
