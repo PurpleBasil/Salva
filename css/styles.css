@@ -71,16 +71,16 @@ margin: 10px;
     transform: scale(4,4);
     opacity: 0;
   }
-  25% {
+  40% {
     transform: scale(1,1);
     opacity: 1;
-    z-index: +1;
   }
   50% {
     transform: scale(1,1);
     opacity: 1;
+    /* z-index: +1; */
   }
-  75% {
+  90% {
     transform: scale(4,4);
     opacity: 0;
   }
@@ -96,7 +96,7 @@ margin: 10px;
   height: 100%;
   object-fit: cover;
   animation-name: zen;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   opacity: 0;
@@ -108,10 +108,10 @@ margin: 10px;
   height: 100%;
   object-fit: cover;
   animation-name: zen;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-delay: 10s;
+  animation-delay: 20s;
   opacity: 0;
 }
 
