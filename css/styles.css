@@ -66,6 +66,7 @@ margin: 10px;
   transform: scale(1.05,1.05);
   /* overflow: hidden; */ /* zodat er geen horiz. scrollbalk komt bij :hover -> werkt nog niet*/
 }
+/* Animation for slide-images */
 @keyframes zen {
   0% {
     transform: scale(4,4);
@@ -90,7 +91,6 @@ margin: 10px;
     z-index: -1;
   }
 }
-
 .slider-img {
   position: relative;
   width: 100%;
@@ -118,3 +118,5 @@ margin: 10px;
   top: -616px;
   animation-delay: 80s;
 }
+/* Hamburger menu + animation */
+/* met vsc de strepen maken zoals met de klok ( zie oefening) */
