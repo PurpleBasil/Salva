@@ -5,7 +5,7 @@
 body {
   margin: 0;
   background-color: #F4FFE8; /* #E7FFCF kan ook geprobeerd */
-
+  font-family: montserrat, Arial, sans-serif;
 }
 h1 {
 	font-size: 22px;
@@ -25,12 +25,12 @@ h5 {
     "slide slide slide"
     "nav1 nav2 nav3"
     "nav4 nav5 nav6"
-    "brytekst bryfoto bryfoto"; 
+    "brytekst bryfoto bryfoto"
+    "testimo1 testimo1 ."
+    ". testimo2 testimo2"
+    "footer footer footer"; 
 }
 
-.box { /* Dit wordt op elke cel afzonderlijk toegepast */
-
-}
 .logo {
   grid-area: logo;
   padding: 5px;
@@ -118,5 +118,31 @@ margin: 10px;
   top: -616px;
   animation-delay: 80s;
 }
+.brytekst {
+  grid-area: brytekst;
+  margin: 10px;
+}
+.bryfoto {
+  grid-area: bryfoto;
+  /* position: relative; */
+}
+.FotoBryanMain {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+  margin: 10px 0px;
+}
+.testimo1 {
+  grid-area: testimo1;
+}
+.testimo2 {
+  grid-area: testimo2;
+}
+.footer {
+  grid-area: footer;
+  height: 200px;
+}
+
 /* Hamburger menu + animation */
 /* met vsc de strepen maken zoals met de klok ( zie oefening) */
