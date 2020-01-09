@@ -26,8 +26,8 @@ h5 {
     "nav1 nav2 nav3"
     "nav4 nav5 nav6"
     "brytekst bryfoto bryfoto"
-    "testimo1 testimo1 ."
-    ". testimo2 testimo2"
+    "testimo1 testimo1 testimo1"
+    "testimo2 testimo2 testimo2"
     "footer footer footer"; 
 }
 
@@ -121,6 +121,7 @@ margin: 10px;
 .brytekst {
   grid-area: brytekst;
   margin: 10px;
+  font-size: 16px;
 }
 .bryfoto {
   grid-area: bryfoto;
@@ -135,13 +136,39 @@ margin: 10px;
 }
 .testimo1 {
   grid-area: testimo1;
+  margin: 10px 50px 0px 10px;
 }
 .testimo2 {
   grid-area: testimo2;
+  margin: 10px 0px 0px 60px;
 }
-.footer {
+.alleTestimo {  
+  padding: 0 8px;
+  border-left: 6px solid grey;
+  color: #000;
+  background-color: #DBF2C4;
+  border-radius: 2%;
+}
+.aanhaal {
+  font-size: 40px;
+  line-height: 0.6em;
+  opacity: 0.5;
+}
+p.quote {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: vollkorn, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+p.auteur {
+  margin-top: 10px;
+  font-size: 14px;
+}
+footer {
   grid-area: footer;
   height: 200px;
+  margin-top: 10px;
 }
 
 /* Hamburger menu + animation */
