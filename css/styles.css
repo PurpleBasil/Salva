@@ -169,7 +169,13 @@ footer {
   grid-area: footer;
   height: 200px;
   margin-top: 10px;
+  background-color: #B7BFB0;
+  color: #000;
+  border-radius: 5px;
 }
-
+.map {
+  width: 75%;
+/*  height: 100px; */
+}
 /* Hamburger menu + animation */
 /* met vsc de strepen maken zoals met de klok ( zie oefening) */
