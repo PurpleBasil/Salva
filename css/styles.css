@@ -17,6 +17,9 @@ h5 {
   color: #68735D;
   font-weight: lighter;
 }
+a {
+  text-decoration: none;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -120,8 +123,8 @@ margin: 10px;
 }
 .brytekst {
   grid-area: brytekst;
-  margin: 10px;
-  font-size: 16px;
+  margin: 15px 10px 10px 15px;
+  font-size: 14px;
 }
 .bryfoto {
   grid-area: bryfoto;
@@ -140,7 +143,7 @@ margin: 10px;
 }
 .testimo2 {
   grid-area: testimo2;
-  margin: 10px 0px 0px 60px;
+  margin: 10px 0px 15px 60px;
 }
 .alleTestimo {  
   padding: 0 8px;
@@ -169,12 +172,13 @@ footer {
   grid-area: footer;
   height: 200px;
   margin-top: 10px;
-  background-color: #B7BFB0;
+/*  background-color: #B7BFB0; */
   color: #000;
   border-radius: 5px;
+  font-size: 16px;
 }
 .map {
-  width: 75%;
+  width: 100%;
 /*  height: 100px; */
 }
 /* Hamburger menu + animation */
