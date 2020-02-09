@@ -174,12 +174,12 @@ margin: 10px;
   background-color: #DBF2C4;
   border-radius: 2%;
 }
-.aanhaal {
+.aanhaal { /* aanhalingstekens in de citaten (op desktop font-size: 40px) */
   font-size: 40px;
   line-height: 0.6em;
   opacity: 0.5;
 }
-p.quote {
+.quote {
   margin-top: 10px;
   font-size: 20px;
   font-family: vollkorn, serif;
