@@ -183,19 +183,15 @@ margin: 10px;
 }
 .aanhaal2 { /* extra voor de sluitende aanhalingstekens */
   top: 50px;
-  /* line-height: 0.6em; */
 }
 .quote {
-  margin-top: 10px;
+  margin-top: 25px;
   font-size: 20px;
   font-family: vollkorn, serif;
   font-style: italic;
   font-weight: 400;
-  /* line-height: 0.6em; */
+  line-height: 1.4em;
 }
-/* .test {
-  line-height: 0.6em;
-} */
 p.auteur {
   margin-top: 10px;
   font-size: 14px;
