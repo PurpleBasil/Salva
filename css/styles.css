@@ -48,6 +48,7 @@ a {
   grid-area: slide;
   height: 150px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 .nav {
 height: 40px;
@@ -63,7 +64,7 @@ border-radius: 5px;
 border: solid 1px #C4D9B0;
 box-shadow: 1px 1px 3px #333;
 transition: all 0.2s ease-in-out 0s; /* wordt getriggered bij :hover */
-margin: 10px;
+margin: 6px;
 }
 .nav:hover {
   transform: scale(1.05,1.05);
