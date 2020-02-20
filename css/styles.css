@@ -57,7 +57,7 @@ color: #68735D;
 font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
 /* de volgende 3 zorgen ervoor dat de tekst horizontaal en vertikaal gecentreerd wordt */
 display: flex; 
-justify-content: center; /* vertikale uitlijning */
+justify-content: center; /* verticale uitlijning */
 align-items: center; /* horizontale uitlijning voor 1 woord */
 text-align: center; /* horizontale uitlijning voor meerdere woorden */
 border-radius: 5px;
@@ -67,7 +67,7 @@ transition: all 0.2s ease-in-out 0s; /* wordt getriggered bij :hover */
 margin: 6px;
 }
 .nav:hover {
-  transform: scale(1.05,1.05);
+  transform: scale(1.02,1.02);
   /* overflow: hidden; */ /* zodat er geen horiz. scrollbalk komt bij :hover -> werkt nog niet*/
 }
 /* Animation for slide-images */
