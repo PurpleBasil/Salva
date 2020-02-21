@@ -48,7 +48,7 @@ a {
   grid-area: slide;
   height: 150px;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .nav {
 height: 40px;
@@ -146,11 +146,12 @@ margin: 6px;
 }
 .brytekst {
   grid-area: brytekst;
-  margin: 15px 10px 10px 15px;
+  margin: 25px 10px 10px 15px;
   font-size: 14px;
 }
 .bryfoto {
   grid-area: bryfoto;
+  margin-top: 10px;
   /* position: relative; */
 }
 .FotoBryanMain {
