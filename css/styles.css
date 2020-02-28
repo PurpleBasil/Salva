@@ -16,6 +16,7 @@ h5 {
   font-size: 16px;
   color: #68735D;
   font-weight: lighter;
+  margin: 22px auto;
 }
 a {
   text-decoration: none;
@@ -213,7 +214,10 @@ footer {
 .contactRegel {
   display: flex;
   justify-content: center;
-  margin: 10px auto;
+  margin: 20px 15px;
+}
+.enkelIkoontjes {
+  justify-content: flex-end;
 }
 .contactRegel a {
   color: #65A624;
