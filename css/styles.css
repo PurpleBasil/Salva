@@ -209,7 +209,19 @@ footer {
   font-size: 16px;
 }
 .map {
-  width: 100%;
+  width: 45%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+}
+.adresTekst {
+  float: right;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+a .adresTekst {
+  color: #000;
+  text-decoration: none;
 }
 .contactRegel {
   display: flex;
