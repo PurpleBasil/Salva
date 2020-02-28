@@ -209,7 +209,31 @@ footer {
 }
 .map {
   width: 100%;
-/*  height: 100px; */
+}
+.contactRegel {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+.contactRegel a {
+  color: #65A624;
+  font-weight: 700;
+}
+i.far, i.fas, i.fab {
+	color: #65A624;
+}
+i.far, i.fab {
+	font-weight: bold;
+}
+i.fa-whatsapp {
+	font-size: 105%;
+	padding: 0px;
+}
+i.fa-envelope-open {
+	padding: 0px 0px 0px 10px;
+}
+i.fa-phone {
+	padding: 0px 0px 0px 10px;
 }
 /* Hamburger menu + animation */
 /* met vsc de strepen maken zoals met de klok ( zie oefening) */
