@@ -30,8 +30,8 @@ a {
     "nav1 nav2 nav3"
     "nav4 nav5 nav6"
     "brytekst bryfoto bryfoto"
-    "testimo1 testimo1 testimo1"
-    "testimo2 testimo2 testimo2"
+    "uitlegHome uitlegHome uitlegHome" /* "testimo1 testimo1 testimo1" */
+                                        /* "testimo2 testimo2 testimo2" */
     "footer footer footer"; 
 }
 
@@ -169,7 +169,7 @@ margin: 6px;
 .testimo2 {
   grid-area: testimo2;
   margin: 10px 0px 15px 60px;
-  /* line-height: 1.2em; heeft geen nut: veranderd alleen afstand boven de auteursregel */
+  /* line-height: 1.2em; heeft geen nut: verandert alleen afstand boven de auteursregel */
 }
 .alleTestimo {  
   padding: 0 8px;
