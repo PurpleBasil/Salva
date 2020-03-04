@@ -147,13 +147,18 @@ margin: 6px;
 }
 .brytekst {
   grid-area: brytekst;
-  margin: 25px 10px 10px 15px;
-  font-size: 14px;
+  margin: 25px 10px 0px 15px;
+  /* font-size: 14px; */
 }
 .bryfoto {
   grid-area: bryfoto;
   margin-top: 10px;
   /* position: relative; */
+}
+.uitlegHome {
+  grid-area: uitlegHome;
+  margin-top: 0px;
+  margin-left: 10px;
 }
 .FotoBryanMain {
   width: 100%;
