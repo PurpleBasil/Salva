@@ -242,7 +242,7 @@ a .adresTekst {
 .enkelIkoontjes {
   justify-content: flex-end;
 }
-.contactRegel a {
+.contactRegel a, .container a {
   color: #65A624;
   font-weight: 700;
 }
