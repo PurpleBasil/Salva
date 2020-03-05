@@ -30,8 +30,8 @@ a {
     "nav1 nav2 nav3"
     "nav4 nav5 nav6"
     "brytekst bryfoto bryfoto"
-    "uitlegHome uitlegHome uitlegHome" /* "testimo1 testimo1 testimo1" */
-                                        /* "testimo2 testimo2 testimo2" */
+    "uitlegHome1 uitlegHome1 uitlegHome1" 
+    "uitlegHome2 uitlegHome2 uitlegHome2"
     "footer footer footer"; 
 }
 
@@ -155,8 +155,13 @@ margin: 6px;
   margin-top: 10px;
   /* position: relative; */
 }
-.uitlegHome {
-  grid-area: uitlegHome;
+.uitlegHome1 {
+  grid-area: uitlegHome1;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.uitlegHome2 {
+  grid-area: uitlegHome2;
   margin-top: 0px;
   margin-left: 10px;
 }
@@ -204,7 +209,7 @@ p.auteur {
   margin-top: 10px;
   font-size: 14px;
 }
-footer {
+.footer {
   grid-area: footer;
   height: 200px;
   margin-top: 10px;
