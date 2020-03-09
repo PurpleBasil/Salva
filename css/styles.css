@@ -262,5 +262,13 @@ i.fa-envelope-open {
 i.fa-phone {
 	padding: 0px 0px 0px 10px;
 }
+.mainVervolg {
+  grid-area: slide;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.mainVervolg a {
+  font-weight: 400;
+}
 /* Hamburger menu + animation */
 /* met vsc de strepen maken zoals met de klok ( zie oefening) */
