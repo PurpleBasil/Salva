@@ -12,12 +12,22 @@ h1 {
 	color: #65A624;
 	margin: 0px;
 }
+h4 {
+  font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
+  color: #68735D;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 h5 {
   font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
   font-size: 16px;
   color: #68735D;
   font-weight: lighter;
   margin: 22px auto;
+}
+h6 {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -237,7 +247,7 @@ a .adresTekst {
 .contactRegel {
   display: flex;
   justify-content: center;
-  margin: 20px 15px;
+  margin: 20px 30px;
 }
 .enkelIkoontjes {
   justify-content: flex-end;
