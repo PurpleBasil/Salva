@@ -280,5 +280,11 @@ i.fa-phone {
 .mainVervolg a {
   font-weight: 400;
 }
+.tarieven h6 {
+  margin-top: 15px;
+}
+.tarieven p {
+  margin-bottom: 20px;
+}
 /* Hamburger menu + animation */
 /* met vsc de strepen maken zoals met de klok ( zie oefening) */
