@@ -17,6 +17,7 @@ h4 {
   color: #68735D;
   font-size: 18px;
   margin-bottom: 20px;
+  margin-left: 5px;
 }
 h5 {
   font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
@@ -33,7 +34,7 @@ a {
   text-decoration: none;
 }
 .bold {
-  font-weight: bold;
+  font-weight: bolder;
 }
 .container {
   display: grid;
@@ -48,7 +49,6 @@ a {
     "uitlegHome2 uitlegHome2 uitlegHome2"
     "footer footer footer"; 
 }
-
 .logo {
   grid-area: logo;
   padding: 5px;
@@ -283,11 +283,20 @@ i.fa-phone {
 .mainVervolg a {
   font-weight: 400;
 }
+.maincontact1 {
+  grid-area: brytekst;
+}
+.maincontact2 {
+  grid-area: bryfoto;
+}
 .tarieven h6 {
   margin-top: 15px;
 }
 .tarieven p {
   margin-bottom: 20px;
+}
+.zonder {
+  list-style-type: none;
 }
 /* Hamburger menu + animation */
 /* met vsc de strepen maken zoals met de klok ( zie oefening) */
