@@ -32,6 +32,9 @@ h6 {
 a {
   text-decoration: none;
 }
+.bold {
+  font-weight: bold;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
