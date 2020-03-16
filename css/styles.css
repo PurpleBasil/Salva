@@ -13,7 +13,7 @@ h1 {
 	margin: 0px;
 }
 h3 {
-  font-size: 16px;
+  font-size: 18px;
   color: #65A624;
 }
 h4 {
@@ -169,8 +169,8 @@ margin: 6px;
 .introtekst {
   grid-area: introtekst;
   margin: 20px 15px 0px 15px;
-  box-shadow: 1px 1px 3px #333;
-  border-radius: 2%;
+  /* box-shadow: 1px 1px 3px #333;
+  border-radius: 2%; */
 }
 .bryfoto {
   grid-area: bryfoto;
@@ -180,12 +180,14 @@ margin: 6px;
 .uitlegHome1 {
   grid-area: uitlegHome1;
   margin-top: 0px;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .uitlegHome2 {
   grid-area: uitlegHome2;
   margin-top: 0px;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .FotoBryanMain {
   width: 60%;
