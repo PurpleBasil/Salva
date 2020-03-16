@@ -308,6 +308,10 @@ i.fa-phone {
 .zonder {
   list-style-type: none;
 }
-
+span.Eras {
+  color: #65A624;
+  font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
+  font-weight: 700;
+}
 /* Hamburger menu + animation */
 /* met vsc de strepen maken zoals met de klok ( zie oefening) */
