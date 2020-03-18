@@ -51,7 +51,7 @@ a {
     "nav4 nav5 nav6"
     "introtekst introtekst introtekst"
     "bryfoto bryfoto bryfoto"
-    "test1 test2 test2"
+    "smalLinks breedRechts breedRechts"
     "uitlegHome1 uitlegHome1 uitlegHome1" 
     "uitlegHome2 uitlegHome2 uitlegHome2"
     "footer footer footer"; 
@@ -250,7 +250,7 @@ p.auteur {
 }
 .adresTekst {
   float: right;
-  margin-top: 10px;
+  margin-top: -5px;
   margin-right: 25px;
 }
 a .adresTekst {
@@ -294,10 +294,10 @@ i.fa-phone {
   font-weight: 400;
 }
 .maincontact1 {
-  grid-area: test1;
+  grid-area: smalLinks;
 }
 .maincontact2 {
-  grid-area: test2;
+  grid-area: breedRechts;
 }
 .tarieven h6 {
   margin-top: 15px;
@@ -312,6 +312,16 @@ span.Eras {
   color: #65A624;
   font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
   font-weight: 700;
+}
+.tekstBreed {
+  grid-area: uitlegHome1;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.centreren {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 /* Hamburger menu + animation */
 /* met vsc de strepen maken zoals met de klok ( zie oefening) */
