@@ -285,6 +285,20 @@ i.fa-envelope-open {
 i.fa-phone {
 	padding: 0px 0px 0px 10px;
 }
+i.fa-bars {
+  font-size: 150%;
+  position: fixed;
+}
+.menuIcon {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 20px;
+  z-index: 999;
+}
 .mainVervolg {
   grid-area: introtekst;
   margin-left: 15px;
@@ -324,4 +338,21 @@ span.Eras {
   margin-bottom: 10px;
 }
 /* Hamburger menu + animation */
-/* met vsc de strepen maken zoals met de klok ( zie oefening) */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  width: 150px;
+
+}
+li a {
+  display: block;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+li a.active {
+  /* Deze nog verder bouwen zoals op https://www.w3schools.com/css/css_navbar.asp Zie vooral ook de Try it yourself code voor de :not(.active) */
+}
