@@ -342,17 +342,23 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1;
+  background-color: #f1f1f1; /* ook f7fff2 proberen */
   width: 150px;
-
+  text-align: center;
+  position: fixed; /* Make it stick, even on scroll */
+  bottom: 0px;
+  /* transform: translate(50%,0); */
+  left: 50%;
 }
 li a {
   display: block;
 }
-li a:hover {
+li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
 li a.active {
   /* Deze nog verder bouwen zoals op https://www.w3schools.com/css/css_navbar.asp Zie vooral ook de Try it yourself code voor de :not(.active) */
+  background-color: #65A624;
+  color: white;
 }
