@@ -54,12 +54,14 @@ a {
     "smalLinks breedRechts breedRechts"
     "uitlegHome1 uitlegHome1 uitlegHome1" 
     "uitlegHome2 uitlegHome2 uitlegHome2"
-    "footer footer footer"; 
+    "footer footer footer"
+    "onderaan onderaan onderaan"; 
 }
 .logo {
   grid-area: logo;
   padding: 5px;
   width: 100%;
+  cursor: pointer;
 }
 .title {
   grid-area: title;
@@ -235,7 +237,7 @@ p.auteur {
 }
 .footer {
   grid-area: footer;
-  height: 200px;
+  height: 220px;
   margin-top: 25px;
 /*  background-color: #B7BFB0; */
   color: #000;
@@ -265,7 +267,7 @@ a .adresTekst {
 .enkelIkoontjes {
   justify-content: flex-end;
 }
-.contactRegel a, .container a {
+.contactRegel a, .container a, nav a {
   color: #65A624;
   font-weight: 700;
 }
@@ -285,20 +287,8 @@ i.fa-envelope-open {
 i.fa-phone {
 	padding: 0px 0px 0px 10px;
 }
-i.fa-bars {
+i.fa-times, i.fa-bars {
   font-size: 150%;
-  position: fixed;
-}
-.menuIcon .fas {
-  width: 100%;
-  display: block;
-  position: relative;
-  margin-top: 0px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  bottom: 20px;
-  z-index: 999;
-  color: blue;
 }
 .mainVervolg {
   grid-area: introtekst;
@@ -339,19 +329,81 @@ span.Eras {
   margin-bottom: 10px;
 }
 /* Hamburger menu + animation */
+
+.navigatie {
+  /* border: 1px solid  #65A624; */
+  background-color: #f1f1f1;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 35px;
+  z-index: 999;
+  box-shadow: 1px -2px 3px #65A624;
+}
+.nav-toggle {
+  display: none; /* anders is de checkbox zichtbaar - het aan en uitzetten is gekoppeld aan de label nav-toggle-label */
+}
+.fa-bars {
+  padding: 7px;
+}
+nav { /* eventuele positioning gebeurt relatief aan waar .navigatie gepositioneerd is */
+  position: absolute;
+  bottom: 100%;
+  left: 33%;
+  background-color: #f1f1f1;
+  width: 33%;
+  transform: scale(1,0);
+  transform-origin: bottom;
+  transition: transform 400ms ease-in-out;
+}
 nav ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1; /* ook f7fff2 proberen */
-  width: 150px;
-  text-align: center;
-  position: fixed; /* Make it stick, even on scroll */
-  bottom: 0px;
-  /* transform: translate(50%,0); */
-  left: 50%; /* dit nog aanpassen om precies in het midden te zitten */
-  z-index: 1000;
+  list-style: none;
+  box-shadow: 1px -2px 3px #65A624;
 }
+nav li {
+  line-height: 1.6em; /* dit veranderen als de items te dicht op elkaar staan */
+}
+nav a {
+  color: #65A624;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in;
+  display: block;
+}
+nav a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+nav a.active {
+  background-color: #65A624;
+  color: white;
+}
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* Media queries */
+@media screen and (min-width: 800px) {
+  .fa-bars {
+    display: none;
+  }
+  nav {
+    all: unset;
+  }
+  nav ul {
+    display: flex;
+  }
+  
+}
+
+/* Oude-foute code voor navigatie onderaan 
 li a {
   display: block;
 }
@@ -363,16 +415,64 @@ li a.active {
   background-color: #65A624;
   color: white;
 }
-li a::before {
-  background-color: #e74c3c;
+.menu {
+  grid-area: onderaan;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0px;
+  background-color: #f1f1f1;
+  z-index: 999px;
 }
-@media screen and (min-width: 600px) {
-  li a {
-    /* float: left !important; Dit evt gebruiken voor grote schermen */
-    /* width: 100% !important; */
-    color: red !important;
-  }
-  .menuIcon .fas {
-    color: red;
-  }
+.go {
+  display: block;
+  position: relative;
+	color: #65A624;
+	text-align: center;
+	font-size: 1.5em;
+  cursor: pointer;
+  
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 800;
 }
+.go::after {
+  
+  position: absolute;
+	left: 0px;
+  width: 150px;
+  height: 40px;
+
+  content: ' \f0c9';
+  padding-top: 5px;
+}
+.go:checked::after {
+  height: 40px;
+  content: '\f00d';
+}
+@keyframes menuSchuiven {
+  0% { bottom: 0px;}
+  60% { bottom: 95px;}
+  100% { bottom: 100px;}
+} 
+.go:checked ~ .schuifmenu {
+  position: relative;
+  animation: menuSchuiven 3s ease-in-out forwards;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  background-color: #f1f1f1; 
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #65A624;
+  position: relative;
+  bottom:-100px;
+}
+*/
