@@ -41,6 +41,12 @@ h6 {
 a {
   text-decoration: none;
 }
+.mainVervolg a:hover,
+.introtekst a:hover,
+.uitlegHome1 a:hover,
+.uitlegHome2 a:hover {
+  text-decoration: underline;
+}
 .bold, p.bold a {
   font-weight: bolder;
 }
