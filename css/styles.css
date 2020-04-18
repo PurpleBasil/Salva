@@ -88,15 +88,16 @@ p.bold a {
 .nav {
 height: 40px;
 background-color: #DBF2C4;
+opacity: .8;
 color: #68735D;
 font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
+font-weight: 400;
 /* de volgende 3 zorgen ervoor dat de tekst horizontaal en vertikaal gecentreerd wordt */
 display: flex; 
 justify-content: center; /* verticale uitlijning */
 align-items: center; /* horizontale uitlijning voor 1 woord */
 text-align: center; /* horizontale uitlijning voor meerdere woorden */
 border-radius: 5px;
-border: solid 1px #C4D9B0;
 box-shadow: 1px 1px 3px #333;
 transition: all 0.2s ease-in-out 0s; /* wordt getriggered bij :hover */
 margin: 6px;
@@ -282,6 +283,7 @@ a .adresTekst {
   color: #65A624;
   font-weight: 700;
 }
+
 i.far, i.fas, i.fab {
 	color: #65A624;
 }
