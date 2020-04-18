@@ -340,6 +340,32 @@ span.Eras {
   justify-content: center;
   margin-bottom: 10px;
 }
+/* Reserveringen paginas */
+.content-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: left;
+	padding: 20px 5%;
+	max-width: 800px;
+}
+.naast-button {
+	flex: 2 0 200px;
+	padding-bottom: 10px;
+}
+a.btn {
+  text-decoration: none;
+  background: #65A624;
+  color: white;
+  padding: 0.35em 0.75em;
+  margin: 0px 15px 0px 10px;
+  border-radius: 8px;
+  box-shadow: 2px 3px 8px #888888;
+  flex: 1 0 80px;
+  text-align: center;
+  max-height: 1.3em;
+}
 /* Hamburger menu + animation */
 
 .navigatie {
@@ -410,80 +436,14 @@ nav a.active {
   }
   nav ul {
     display: flex;
-  }
-  
+  } 
 }
-
-/* Oude-foute code voor navigatie onderaan 
-li a {
-  display: block;
+@media (min-width:700px) { /* Voor reserveringen paginas = nog kijken of deze echt nodig zijn en/of ze kunnen samengevoegd met andere */
+	body {
+		font-size: 16px;
+	}
+	.content-row,
+	.content-column {
+		margin: 0px 20% 0px 20%;
+	}
 }
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-li a.active {
-  background-color: #65A624;
-  color: white;
-}
-.menu {
-  grid-area: onderaan;
-  display: block;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 50px;
-  margin-top: 5px;
-  font-size: 16px;
-  position: fixed;
-  bottom: 0px;
-  background-color: #f1f1f1;
-  z-index: 999px;
-}
-.go {
-  display: block;
-  position: relative;
-	color: #65A624;
-	text-align: center;
-	font-size: 1.5em;
-  cursor: pointer;
-  
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 800;
-}
-.go::after {
-  
-  position: absolute;
-	left: 0px;
-  width: 150px;
-  height: 40px;
-
-  content: ' \f0c9';
-  padding-top: 5px;
-}
-.go:checked::after {
-  height: 40px;
-  content: '\f00d';
-}
-@keyframes menuSchuiven {
-  0% { bottom: 0px;}
-  60% { bottom: 95px;}
-  100% { bottom: 100px;}
-} 
-.go:checked ~ .schuifmenu {
-  position: relative;
-  animation: menuSchuiven 3s ease-in-out forwards;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 5px;
-  background-color: #f1f1f1; 
-  width: 150px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px #65A624;
-  position: relative;
-  bottom:-100px;
-}
-*/
