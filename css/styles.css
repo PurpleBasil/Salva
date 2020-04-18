@@ -1,5 +1,4 @@
 /* CSS Salvadormassageservices.nl */
-/* Zie ook styles2.css */
 
 @font-face {
   font-family: "Eras Demi ITC";
@@ -366,6 +365,9 @@ a.btn {
   text-align: center;
   max-height: 1.3em;
 }
+.youcanbookme-wrap {
+	padding: 0px 20px 0px 25px;
+}
 /* Hamburger menu + animation */
 
 .navigatie {
@@ -438,7 +440,7 @@ nav a.active {
     display: flex;
   } 
 }
-@media (min-width:700px) { /* Voor reserveringen paginas = nog kijken of deze echt nodig zijn en/of ze kunnen samengevoegd met andere */
+@media (min-width:700px) { /* Voor o.a. reserveringen paginas = nog kijken of deze echt nodig zijn en/of ze kunnen samengevoegd met andere */
 	body {
 		font-size: 16px;
 	}
