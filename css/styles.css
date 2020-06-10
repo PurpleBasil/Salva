@@ -1,44 +1,79 @@
+/* CSS Salvadormassageservices.nl */
+
 @font-face {
   font-family: "Eras Demi ITC";
   src: url(../erasdemiitc.ttf) format("truetype");
 }
 body {
   margin: 0;
-  background-color: #F4FFE8; /* #E7FFCF kan ook geprobeerd */
+  background-color: #fff; /* #E7FFCF kan ook geprobeerd */
   font-family: montserrat, Arial, sans-serif;
 }
 h1 {
 	font-size: 24px;
 	color: #65A624;
-	margin: 0px;
+  margin: 0px;
+  margin-top: 8px;
+}
+h3 {
+  font-size: 18px;
+  color: #65A624;
+}
+h4 {
+  font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
+  color: #68735D;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 15px;
 }
 h5 {
+  font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
   font-size: 16px;
   color: #68735D;
   font-weight: lighter;
-  margin: 22px auto;
+  margin: 4px auto 40px auto; 
+}
+h6 {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 a {
   text-decoration: none;
 }
+.mainVervolg a:hover,
+.introtekst a:hover,
+.uitlegHome1 a:hover,
+.uitlegHome2 a:hover {
+  text-decoration: underline;
+}
+.bold, p.bold a {
+  font-weight: bolder;
+}
+p.bold a {
+  line-height: 1.35em;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 
+  grid-template-areas:
+    "slide slide slide" 
     "logo title title"
-    "slide slide slide"
     "nav1 nav2 nav3"
     "nav4 nav5 nav6"
-    "brytekst bryfoto bryfoto"
-    "uitlegHome uitlegHome uitlegHome" /* "testimo1 testimo1 testimo1" */
-                                        /* "testimo2 testimo2 testimo2" */
-    "footer footer footer"; 
+    "introtekst introtekst introtekst"
+    "bryfoto bryfoto bryfoto"
+    "smalLinks breedRechts breedRechts"
+    "uitlegHome1 uitlegHome1 uitlegHome1" 
+    "uitlegHome2 uitlegHome2 uitlegHome2"
+    "footer footer footer"
+    "onderaan onderaan onderaan"; 
 }
-
 .logo {
   grid-area: logo;
   padding: 5px;
   width: 100%;
+  cursor: pointer;
 }
 .title {
   grid-area: title;
@@ -49,20 +84,21 @@ a {
   grid-area: slide;
   height: 150px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .nav {
 height: 40px;
 background-color: #DBF2C4;
+opacity: .8;
 color: #68735D;
 font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
+font-weight: 400;
 /* de volgende 3 zorgen ervoor dat de tekst horizontaal en vertikaal gecentreerd wordt */
 display: flex; 
 justify-content: center; /* verticale uitlijning */
 align-items: center; /* horizontale uitlijning voor 1 woord */
 text-align: center; /* horizontale uitlijning voor meerdere woorden */
 border-radius: 5px;
-border: solid 1px #C4D9B0;
 box-shadow: 1px 1px 3px #333;
 transition: all 0.2s ease-in-out 0s; /* wordt getriggered bij :hover */
 margin: 6px;
@@ -145,27 +181,35 @@ margin: 6px;
   top: -616px;
   animation-delay: 80s;
 }
-.brytekst {
-  grid-area: brytekst;
-  margin: 25px 10px 0px 15px;
-  /* font-size: 14px; */
+.introtekst {
+  grid-area: introtekst;
+  margin: 20px 15px 0px 15px;
+  /* box-shadow: 1px 1px 3px #333;
+  border-radius: 2%; */
 }
 .bryfoto {
   grid-area: bryfoto;
   margin-top: 10px;
   /* position: relative; */
 }
-.uitlegHome {
-  grid-area: uitlegHome;
+.uitlegHome1 {
+  grid-area: uitlegHome1;
   margin-top: 0px;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.uitlegHome2 {
+  grid-area: uitlegHome2;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .FotoBryanMain {
-  width: 100%;
+  width: 60%;
   height: 100%;
   object-fit: cover;
   border-radius: 2%;
-  margin: 10px 0px;
+  margin: 10px 20%;
 }
 .testimo1 {
   grid-area: testimo1;
@@ -204,10 +248,10 @@ p.auteur {
   margin-top: 10px;
   font-size: 14px;
 }
-footer {
+.footer {
   grid-area: footer;
-  height: 200px;
-  margin-top: 10px;
+  height: 220px;
+  margin-top: 25px;
 /*  background-color: #B7BFB0; */
   color: #000;
   border-radius: 5px;
@@ -221,7 +265,7 @@ footer {
 }
 .adresTekst {
   float: right;
-  margin-top: 10px;
+  margin-top: -5px;
   margin-right: 25px;
 }
 a .adresTekst {
@@ -231,15 +275,16 @@ a .adresTekst {
 .contactRegel {
   display: flex;
   justify-content: center;
-  margin: 20px 15px;
+  margin: 20px 30px;
 }
 .enkelIkoontjes {
   justify-content: flex-end;
 }
-.contactRegel a {
+.contactRegel a, .container a, nav a {
   color: #65A624;
   font-weight: 700;
 }
+
 i.far, i.fas, i.fab {
 	color: #65A624;
 }
@@ -256,5 +301,154 @@ i.fa-envelope-open {
 i.fa-phone {
 	padding: 0px 0px 0px 10px;
 }
+i.fa-times, i.fa-bars {
+  font-size: 150%;
+}
+.mainVervolg {
+  grid-area: introtekst;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.mainVervolg a {
+  font-weight: 400;
+}
+.maincontact1 {
+  grid-area: smalLinks;
+}
+.maincontact2 {
+  grid-area: breedRechts;
+}
+.tarieven h6 {
+  margin-top: 15px;
+}
+.tarieven p {
+  margin-bottom: 20px;
+}
+.zonder {
+  list-style-type: none;
+}
+span.Eras {
+  color: #65A624;
+  font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
+  font-weight: 700;
+}
+.tekstBreed {
+  grid-area: uitlegHome1;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.centreren {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+/* Reserveringen paginas */
+.content-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: left;
+	padding: 20px 5%;
+	max-width: 800px;
+}
+.naast-button {
+	flex: 2 0 200px;
+	padding-bottom: 10px;
+}
+a.btn {
+  text-decoration: none;
+  background: #65A624;
+  color: white;
+  padding: 0.35em 0.75em;
+  margin: 0px 15px 0px 10px;
+  border-radius: 8px;
+  box-shadow: 2px 3px 8px #888888;
+  flex: 1 0 80px;
+  text-align: center;
+  max-height: 1.3em;
+}
+.youcanbookme-wrap {
+	padding: 0px 20px 0px 25px;
+}
 /* Hamburger menu + animation */
-/* met vsc de strepen maken zoals met de klok ( zie oefening) */
+
+.navigatie {
+  background-color: #f1f1f1;
+  text-align: center;
+  position: fixed;
+  bottom: -1px;
+  width: 100%;
+  height: 35px;
+  z-index: 999;
+  box-shadow: 2px -2px 5px -3px #65A624;
+}
+.nav-toggle {
+  display: none; /* anders is de checkbox zichtbaar - het aan en uitzetten is gekoppeld aan de label nav-toggle-label */
+}
+.fa-bars {
+  padding: 7px;
+}
+nav { /* eventuele positioning gebeurt relatief aan waar .navigatie gepositioneerd is */
+  position: absolute;
+  bottom: 100%;
+  left: 30%;
+  background-color: #f1f1f1;
+  width: 40%;
+  transform: scale(1,0);
+  transform-origin: bottom;
+  transition: transform 400ms ease-in-out;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-shadow: 2px -2px 5px -3px #65A624;
+}
+nav li {
+  line-height: 1.6em; /* dit veranderen als de items te dicht op elkaar staan */
+}
+nav a {
+  color: #65A624;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in;
+  display: block;
+}
+nav a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+nav a.active {
+  background-color: #65A624;
+  color: white;
+}
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* Media queries */
+@media screen and (min-width: 800px) {
+  .fa-bars {
+    display: none;
+  }
+  nav {
+    all: unset;
+  }
+  nav ul {
+    display: flex;
+  } 
+}
+@media (min-width:700px) { /* Voor o.a. reserveringen paginas = nog kijken of deze echt nodig zijn en/of ze kunnen samengevoegd met andere */
+	body {
+		font-size: 16px;
+	}
+	.content-row,
+	.content-column {
+		margin: 0px 20% 0px 20%;
+	}
+}
