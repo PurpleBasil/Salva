@@ -433,7 +433,7 @@ nav a.active {
 }
 .nav-toggle-close { /* geheel D - volgende ook */
   width: 100%;
-  height: 100%;
+  height: 900%;
   position: absolute;
   top: 0%;
   left: 0%;
