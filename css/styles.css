@@ -380,12 +380,13 @@ a.btn {
   bottom: -1px;
   width: 100%;
   height: 35px;
-  z-index: 999;
+  z-index: 110;
   box-shadow: 2px -2px 5px -3px #65A624;
 }
 .nav-toggle {
   display: none; /* anders is de checkbox zichtbaar - het aan en uitzetten is gekoppeld aan de label nav-toggle-label */
 }
+
 .fa-bars {
   padding: 7px;
 }
@@ -423,12 +424,25 @@ nav a.active {
   background-color: #65A624;
   color: white;
 }
-.nav-toggle:checked ~ nav {
+.nav-toggle:checked ~.navigatie nav { /* D .navigatie toegevoegd - idem hieronder */
   transform: scale(1,1);
 }
-.nav-toggle:checked ~ nav a {
+.nav-toggle:checked ~ .navigatie a { /* D en nav weggehaald */
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
+}
+.nav-toggle-close { /* geheel D - volgende ook */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 100;
+}
+.nav-toggle:checked ~ .nav-toggle-close {
+  display: block;
 }
 
 /* Media queries */
