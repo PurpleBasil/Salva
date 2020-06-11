@@ -394,7 +394,7 @@ nav { /* eventuele positioning gebeurt relatief aan waar .navigatie gepositionee
   position: absolute;
   bottom: 100%;
   left: 30%;
-  background-color: #f1f1f1;
+  background-color: #fff;
   width: 40%;
   transform: scale(1,0);
   transform-origin: bottom;
@@ -424,14 +424,14 @@ nav a.active {
   background-color: #65A624;
   color: white;
 }
-.nav-toggle:checked ~.navigatie nav { /* D .navigatie toegevoegd - idem hieronder */
+.nav-toggle:checked ~.navigatie nav { 
   transform: scale(1,1);
 }
-.nav-toggle:checked ~ .navigatie a { /* D en nav weggehaald */
+.nav-toggle:checked ~ .navigatie a { 
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
-.nav-toggle-close { /* geheel D - volgende ook */
+.nav-toggle-close { 
   width: 100%;
   height: 900%;
   position: absolute;
