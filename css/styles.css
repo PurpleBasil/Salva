@@ -259,14 +259,14 @@ p.auteur {
 }
 .map {
   width: 45%;
-  margin-left: 10px;
+  margin-left: 5%;
   margin-bottom: 10px;
   border: 1px solid grey;
 }
 .adresTekst {
   float: right;
   margin-top: -5px;
-  margin-right: 25px;
+  margin-right: 9%;
 }
 a .adresTekst {
   color: #000;
@@ -278,6 +278,9 @@ a .adresTekst {
   margin: 20px 30px;
 }
 .enkelIkoontjes {
+  display: flex;
+  justify-content: center;
+  margin: 20px 30px;
   justify-content: flex-end;
 }
 .contactRegel a, .container a, nav a {
@@ -446,6 +449,22 @@ nav a.active {
 }
 
 /* Media queries */
+@media screen and (max-width: 346px) {
+  .adresTekst {
+    float: none;
+  }
+  .adresTekst h5 {
+    margin-left: 10%;
+    font-size: 1.2em;
+  }
+  .map {
+    width:80%;
+    margin-left: 10%;
+  }
+  .contactRegel {
+    font-size: 0.85em;
+  }
+}  
 @media screen and (min-width: 385px) {
   div.title {
     margin-left: 5%;
@@ -455,6 +474,15 @@ nav a.active {
   .container {
     margin-left: 6%;
     margin-right: 6%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .enkelIkoontjes {
+    font-size: 1.3em;
+    margin-right: 6%;
+  }
+  .contactRegel {
+    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 800px) { /* verandert de hamburger button naar? */
