@@ -57,7 +57,7 @@ p.bold a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "slide slide slide" 
+    /* "slide slide slide" */
     "logo title title"
     "nav1 nav2 nav3"
     "nav4 nav5 nav6"
@@ -446,7 +446,18 @@ nav a.active {
 }
 
 /* Media queries */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 385px) {
+  div.title {
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 400px) {
+  .container {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+@media screen and (min-width: 800px) { /* verandert de hamburger button naar? */
   .fa-bars {
     display: none;
   }
