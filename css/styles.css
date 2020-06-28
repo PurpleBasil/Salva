@@ -359,7 +359,7 @@ span.Eras {
 	flex: 2 0 200px;
 	padding-bottom: 10px;
 }
-a.btn {
+a.btn { 
   text-decoration: none;
   background: #65A624;
   color: white;
@@ -373,9 +373,9 @@ a.btn {
 }
 .youcanbookme-wrap {
 	padding: 0px 20px 0px 25px;
-}
-/* Hamburger menu + animation */
+} /* Einde reserveringen pagina's */
 
+/* Hamburger menu + animation */
 .navigatie {
   background-color: #fff;
   text-align: center;
@@ -424,7 +424,7 @@ nav a:hover:not(.active) {
   color: white;
 }
 nav a.active {
-  background-color: #65A624;
+  background-color: rgba(101, 166, 36, 0.7);
   color: white;
 }
 .nav-toggle:checked ~.navigatie nav { 
