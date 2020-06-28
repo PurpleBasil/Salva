@@ -424,7 +424,7 @@ nav a:hover:not(.active) {
   color: white;
 }
 nav a.active {
-  background-color: rgba(101, 166, 36, 0.8);
+  background-color: rgba(101, 166, 36, 0.9);
   color: white;
 }
 .nav-toggle:checked ~.navigatie nav { 
