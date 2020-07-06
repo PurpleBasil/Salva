@@ -89,6 +89,10 @@ p.bold a {
 .nav {
 height: 40px;
 background-color: #DBF2C4;
+background-image: url("../images/vaas.jpg");
+background-repeat: no-repeat;
+background-size: 25%;
+background-position-x: right;
 opacity: .8;
 color: #68735D;
 font-family: 'Eras Demi ITC', montserrat, Arial, sans-serif;
