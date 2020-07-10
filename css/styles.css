@@ -505,10 +505,11 @@ nav a.active {
   }
   .navigatie {
     top: 380px;
-  /*  border: 1px solid rgba(101, 166, 36, 0.3); */
     box-shadow: none;
     position: absolute;
     margin-left: 8%;
+    /* display: flex; */
+    /* justify-content: center; */
   }
   input.nav-toggle-label {
     all:unset;
@@ -528,6 +529,7 @@ nav a.active {
   nav ul {
     display: flex;
     box-shadow: none;
+    height: 38px
   } 
   nav li {
     color: green;
@@ -554,5 +556,25 @@ nav a.active {
     color: unset;
     text-decoration: underline;
   }
-  
+  .introtekst {
+  margin-top: -15px;
+}  
 }
+@media screen and (min-width: 900px) {
+  .navigatie {
+    margin-left: 10%;
+    top: 400px;
+  }
+  .introtekst {
+    margin-top: -5px;
+  }
+}  
+@media screen and (min-width: 1000px) {
+  .navigatie {
+    margin-left: 15%;
+    top: 420px;
+  }
+  .introtekst {
+    margin-top: 5px;
+  }
+}  
