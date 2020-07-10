@@ -507,8 +507,8 @@ nav a.active {
     top: 380px;
   /*  border: 1px solid rgba(101, 166, 36, 0.3); */
     box-shadow: none;
-
     position: absolute;
+    margin-left: 8%;
   }
   input.nav-toggle-label {
     all:unset;
@@ -524,7 +524,6 @@ nav a.active {
   nav a {
     opacity: 1;
     width: 100px;
-
   }
   nav ul {
     display: flex;
@@ -534,7 +533,7 @@ nav a.active {
     color: green;
     border-radius: 3px;
     box-shadow: 2px -2px 5px -3px #65A624;
-    padding: 0.5%;
+    padding: 0.6%;
     margin-right: 1%;
 
   }
@@ -550,4 +549,10 @@ nav a.active {
   h1 {
     font-size: 28px;
   }
+  nav a:hover:not(.active), nav a.active {
+    background-color: unset;
+    color: unset;
+    text-decoration: underline;
+  }
+  
 }
