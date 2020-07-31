@@ -595,11 +595,16 @@ img.FotoBryanMain {
     top: 33%;
     margin-left: 14%;
   }
-  .introtekst {
+  .introtekst, .uitlegHome1, .uitlegHome2, .footer {
     margin-top: 5px;
+    margin-left: 10%;
+    margin-right: 5%;
   }
   .adresTekst {
     margin-right: 25%;
+  }
+  .footer {
+    margin-top: 50px;
   }
 }  
 @media screen and (min-width: 1200px) {
